@@ -1,0 +1,25 @@
+<template>
+  <div>
+      {{ count }}
+  </div>
+</template>
+
+<script>
+import { EventBus } from '../bus.js'
+export default {
+    data() {
+        return {
+            count: null
+        }
+    },
+    mounted() {
+        EventBus.$on('add',value => {
+            this.count = value.num
+        })
+    }
+}
+</script>
+
+<style>
+
+</style>
