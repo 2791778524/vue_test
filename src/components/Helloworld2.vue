@@ -18,6 +18,7 @@ export default {
             this.count = value.num + 1
             console.log(this.count);
         })
+        console.log(this.$parent);
     }
 }
 </script>
