@@ -14,7 +14,7 @@ export default {
     },
     mounted() {
         EventBus.$on('add',value => {
-            this.count = value.num
+            this.count = value.num + 1
         })
     }
 }
