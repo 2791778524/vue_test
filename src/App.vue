@@ -18,6 +18,7 @@ export default {
   mounted() {
     console.log(this.$refs.count);
     console.log(this.$children);
+    console.log(this.$attrs);
   }
 }
 </script>
