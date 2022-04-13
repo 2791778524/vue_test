@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <div>兄弟组件</div>
     <button @click="add">传输数据</button>
   </div>
 </template>

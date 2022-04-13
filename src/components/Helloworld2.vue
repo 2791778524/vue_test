@@ -1,6 +1,7 @@
 <template>
   <div>
-      {{ count }}
+      <div>兄弟组件</div>
+      <h1>传过来的值为{{ count }}</h1>
   </div>
 </template>
 

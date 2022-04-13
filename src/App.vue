@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld/>
-    <HelloworldChild/>
+    <HelloworldChild ref="dom1"/>
   </div>
 </template>
 
@@ -14,6 +14,9 @@ export default {
   components: {
     HelloWorld,
     HelloworldChild
+  },
+  mounted() {
+    console.log(this.$refs.count);
   }
 }
 </script>
