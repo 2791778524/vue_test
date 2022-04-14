@@ -19,6 +19,7 @@ export default {
             console.log(this.count);
         })
         console.log(this.$parent);
+        this.getData()
     },
     beforeMount(){console.log('dom加载之前');},
     created() {console.log('数据加载完成后');},
@@ -27,6 +28,11 @@ export default {
     beforeUpdate(){console.log('数据更新之前');},
     destroyed(){console.log('组件销毁后');},
     beforeDestroy(){console.log('组件销毁前');},
+    methods:{
+        getData(){
+            console.log('方法');
+        }
+    }
 }
 </script>
 
