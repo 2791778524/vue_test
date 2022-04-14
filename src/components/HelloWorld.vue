@@ -2,6 +2,9 @@
   <div class="hello">
     <div>兄弟组件</div>
     <button @click="add">传输数据</button>
+    <div>
+      
+    </div>
   </div>
 </template>
 
@@ -30,7 +33,6 @@ export default {
   beforeDestroy(){
     clearTimeout(timer)
     this.timer = null
-    console.log(this.timer);
   },
   destroyed(){},
 }
