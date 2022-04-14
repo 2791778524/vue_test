@@ -10,16 +10,29 @@ import { EventBus } from '../bus.js'
 export default {
   data() {
     return {
-      num: 10
+      num: 10,
+      timer: null
     }
   },
   methods:{
     add() {
-      EventBus.$emit('add',{
-        num: this.num
-      })
+      this.timer = setTimeout(()=>{
+        EventBus.$emit('add',{
+          num: this.num
+        })
+      },1000)
     }
-  }
+  },
+  beforeMount(){},
+  mounted(){},
+  beforeUpdate(){},
+  updated(){},
+  beforeDestroy(){
+    clearTimeout(timer)
+    this.timer = null
+    console.log(this.timer);
+  },
+  destroyed(){},
 }
 </script>
 
