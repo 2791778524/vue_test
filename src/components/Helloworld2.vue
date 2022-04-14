@@ -24,7 +24,7 @@ export default {
     created() {console.log('数据加载完成后');},
     beforeCreate(){console.log('数据加载完成之前');},
     updated(){console.log('数据更新后');},
-    beforeUpdate(){console.log('数据跟新之前');},
+    beforeUpdate(){console.log('数据更新之前');},
     destroyed(){console.log('组件销毁后');},
     beforeDestroy(){console.log('组件销毁前');},
 }
