@@ -7,7 +7,7 @@
     :item-height="100"
     :items="tableData"
   >
-    <template v-slot="{ item, index }">
+    <template v-slot="{ item }">
       <div class="list-item" :key="item.id">
         <p class="mr-2">{{ item.id }}</p>
         <p>{{ item.name }}</p>
