@@ -27,6 +27,7 @@ export default {
     for (let i = 0; i < 100000; i++) {
       this.tableData.push({ id: i, name: Math.random() });
     }
+    console.log(this.tableData);
   },
 };
 </script>
